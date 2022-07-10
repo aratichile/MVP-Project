@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_avtar"
+        android:layout_width="@dimen/row_width"
+        android:layout_height="@dimen/row_heigh"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/purple_700"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_avtar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:contentDescription="Hold avtar" />
+
+        <ProgressBar
+            android:id="@+id/pb_avtar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_heigh"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_heigh"
+        app:layout_constraintTop_toTopOf="@+id/rl_avtar"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/rl_avtar"
+        app:layout_constraintBottom_toBottomOf="@id/rl_avtar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/purple_200"
+            android:textAlignment="center"
+            app:fontFamily="monospace" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/purple_200"
+            android:layout_below="@+id/tv_name"
+            android:textAlignment="center"
+            app:fontFamily="monospace" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

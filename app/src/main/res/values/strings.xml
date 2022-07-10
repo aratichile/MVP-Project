@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Virtusa ICICI MVP Application</string>
+    <string name="no_data_found">Oops! No result found.</string>
+    <string name="communication_error">Error in getting data. Please try again later.</string>
+</resources>
